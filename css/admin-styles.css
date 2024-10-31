@@ -1,0 +1,104 @@
+	.pugreviews-reviews {
+		width: 280px;
+		margin: auto;
+	}
+	.pugreviews-panel {
+		width: 250px;
+		font-size: 16px;
+		font-family: Open Sans;
+		padding: 20px;
+		box-sizing: border-box;
+		border: 1px dotted #00000050;
+		margin: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		cursor: pointer;
+	}
+	.pugreviews-panel:active {
+		opacity: 0.5;
+	}
+	.pugreviews-name {
+	    font-size: 12px;
+	    text-align: right;
+	    opacity: 0.7;
+	}
+	.pugreviews-activereview {
+		border: 1px solid #000000;
+		box-shadow: 0 0 5px #00000040;
+	}
+	.pugreviews-inserteditem {
+		opacity: 0.2;
+	}
+	#wpfooter {
+		display: none
+	}
+	/* Buttons */
+	.pugreviews-inlinebtn {
+	    display: inline-block;
+	    padding: 10px;
+	    background-color: #f9f9f9;
+	    color: #909090;
+		box-shadow: 0 0 5px #00000040;
+		font-size: 16px;
+	    cursor: pointer;
+	}
+	.pugreviews-inlinebtn:active {
+		opacity: 0.5;
+	}
+	.pugreviews-inlinetoolbtn {
+		display: inline-block;
+		padding: 7px;
+		background-color: #ffffff;
+		color: #909090;
+		font-size: 20px;
+		cursor: pointer;
+	}
+	.pugreviews-inlinetoolbtn:active {
+		opacity: 0.5;
+	}
+	/* Settings */
+	.pugreviews-settings *, .pugreviews-reviews *, .pugreviews-submitbutton * {
+		user-select: none;
+	}
+	.pugreviews-settings {
+	    display: none;
+	    position: fixed;
+		top: 50%;
+		transform: translate(0, -50%);
+	    right: 0px;
+	    width: 180px;
+	    background-color: #ffffff;
+	    padding: 20px;
+		box-shadow: 0 0 15px #00000014;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		z-index: 9999;
+	}
+	.pugreviews-settings label {
+		margin-top: 15px;
+		display: block;
+	}
+	.pugreviews-settings textarea {
+		width: 100%;
+		border: 1px solid #8c8f94;
+		padding: 2px;
+		border-radius: 4px;
+		height: 100px;
+		resize: none;
+	}
+	/* Submit Button */
+	.pugreviews-submitbutton {
+		display: inline-block;
+		background-color: #ffffff;
+		position: fixed;
+		bottom: 0px;
+		padding: 20px;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+	.pugreviews-submitbutton p {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}

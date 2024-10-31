@@ -1,0 +1,95 @@
+.pugreviews-button {
+	background-color: var(--pugbackgroundcolor);
+	color: var(--pugtextcolor);
+	display: block;
+	z-index: 999999;
+	position: fixed;
+	width: 250px;
+	border-radius: 50px;
+	font-size: 16px;
+	font-family: Open Sans;
+	text-align: center;
+	padding: 20px;
+	box-sizing: border-box;
+	transition: 0.7s border-radius;
+	box-shadow: 0 0 15px #00000050;
+	animation-name: pugbounce;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear; 
+	cursor: pointer;
+}
+.pugreviews-button * {
+	user-select: none;
+}
+.pugreviews-button .pugreviews-review-inner {
+	display: none;
+}
+.pugreviews-reviews .pugreviews-review-inner {
+	display: block;
+}
+.pugreviews-button .pugreviews-review-inner .pugreviews-showpanel, .pugreviews-button .pugreviews-review-inner .pugreviews-name, .pugreviews-button .pugreviews-review-inner i, .pugreviews-button .pugreviews-review-inner .pugreviews-innerbutton {
+	font-size: 0px;
+	padding: 0px;
+	margin-top: 0px;
+}
+.pugreviews-reviews {
+	background-color: var(--pugbackgroundcolor);
+	color: var(--pugtextcolor);
+	display: block;
+	z-index: 999999;
+	position: fixed;
+	width: 250px;
+	border-radius: 5px;
+	font-size: 16px;
+	font-family: Open Sans;
+	padding: 20px;
+	box-sizing: border-box;
+	transition: 0.7s border-radius;
+	box-shadow: 0 0 15px #00000050;
+}
+.pugreviews-reviews * {
+	user-select: none;
+}
+.pugreviews-reviews .pugreviews-button-inner, .pugreviews-reviews .pugreviews-button-inner i {
+	font-size: 0px;
+}
+.pugreviews-reviews i {
+	font-size: 16px;
+	transition: 1s transform;
+}
+.pugreviews-panel {
+	display: none;
+}
+.pugreviews-innerbutton {
+    box-shadow: 0 0 5px #00000073;
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 10px;
+    display: inline-block;
+	cursor: pointer;
+}
+.pugreviews-innerbutton:active {
+	background-color: var(--pugtextcolor);
+	color: var(--pugbackgroundcolor);
+}
+@keyframes pugbounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+.pugreviews-spin {
+	animation-name: pugspin;
+	animation-duration: 5000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear; 
+}
+@keyframes pugspin {
+    from { transform:rotate(0deg); }
+    to { transform:rotate(360deg); }
+}
+.pugreviews-name {
+	font-size: 12px;
+	text-align: right;
+	opacity: 0.7;
+}
